@@ -7,7 +7,7 @@ from transformers import BertTokenizer
 @st.cache(allow_output_mutation=True)
 def get_model():
     tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
-    model = tf.saved_model.load('C:/Users/Peach/OneDrive/Desktop/modelbert300000/modelbert')  
+    model = tf.saved_model.load('Users/Peach/OneDrive/Desktop/modelbert300000/modelbert')  
     return tokenizer, model
 
 
